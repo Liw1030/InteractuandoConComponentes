@@ -63,3 +63,4 @@ document.getElementById('vaciarCarrito').addEventListener('click', function() {
 function alertaVaciar(){
     console.log('Carrito vaciado');
 }
+
