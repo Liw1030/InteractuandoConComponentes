@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;    
+    background: #f4f4f4;
+}
+
+h2, p {
+    margin: 10px;
+    text-align: center;
+}
+
+h2 {
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+h2:hover {
+    font-size: 28px;
+}
+
+.container {
+    align-self: center;
+    box-sizing: border-box;
+    border: solid 2px rgb(54, 54, 54);
+    border-radius: 8px;
+    padding: 3%;
+    box-shadow: 8px 8px rgb(182, 182, 182);
+    background: #fff;
+    min-width: 350px;
+}
+
+#productos {
+    width: 100%;
+}
+
+.cajonProductos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid #b6b6b6;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    background: #f9f9f9;
+    box-shadow: 2px 2px 8px #e0e0e0;
+}
+
+.cajonProductos img {
+    margin-bottom: 8px;
+}
+
+.cajonProductos h2, 
+.cajonProductos p, 
+.cajonProductos button {
+    margin: 6px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.cajonProductos p{
+    margin-left: 10%;
+}
+
+button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10;
+    width: 100%;
+    border-radius: 5px;
+    height: 30px;
+    padding: 0 10px;
+    transition: background-color 0.3s, height 0.6s;
+    cursor: pointer;
+    border: none;
+    background: #e0e0e0;
+    font-size: 16px;
+}
+
+button span {
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: rgba(105, 105, 105, 0.747);
+    height: 40px;
+    color: #fff;
+}
+
+#agregarJean, #agregarChaqueta, #agregarTennis{
+    margin-left: 10%;
+}
+
+#vaciarCarrito {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    background: #e74c3c;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s;
+}
+
+#vaciarCarrito:hover {
+    background: #c0392b;
+}
+
+img.ImageTennis {
+    height: 80px;
+    width: 80px;
+    margin-right: 10px;
+}
+
+img.ImageChaqueta {
+    height: 80px;
+    width: 60px;
+    margin-right: 10px;
+}
+
+img.ImageJean {
+    height: 80px;
+    margin-right: 10px;
+}
