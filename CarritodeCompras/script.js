@@ -11,22 +11,22 @@ function actualizarPantalla() {
 document.getElementById('agregarJean').addEventListener('click', function() {
     contador1++;
     actualizarPantalla();
-    alertaCompra();
+    alertaCompraYResumen();
 });
 
 document.getElementById('agregarChaqueta').addEventListener('click', function() {
     contador2++;
     actualizarPantalla();
-    alertaCompra();
+    alertaCompraYResumen();
 });
 
 document.getElementById('agregarTennis').addEventListener('click', function() {
     contador3++;
     actualizarPantalla();
-    alertaCompra();
+    alertaCompraYResumen();
 });
 
-function alertaCompra(){
+function alertaCompraYResumen(){
     alert('¡Envío gratis aplicado!');
 }
 
@@ -36,7 +36,7 @@ let precioUnidadJean = 30
 let precioUnidadChaqueta = 45
 let precioUnidadTennis = 48
 
-function alertaCompra(){
+function alertaCompraYResumen(){
     let total = (contador1 * precioUnidadJean) + (contador2 * precioUnidadChaqueta) + (contador3 * precioUnidadTennis);
     console.log(
         "Productos en el carrito:",
@@ -47,6 +47,7 @@ function alertaCompra(){
     if (total > 50) {
         alert('¡Envío gratis aplicado!');
     }
+    document.getElementById('resumenCarrito').textContent = `Total: $${total}`;
 }
 
 
